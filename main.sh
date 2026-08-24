@@ -37,8 +37,8 @@ print_header() {
     center_text "ASTRO WEBSITE MANAGER" "$CLR_CYAN"
     echo -e "${CLR_GOLD}┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫${NC}"
     center_text "vukilis" "$CLR_GOLD"
-    center_text "https://vukilis.com" "$CLR_GOLD"
-    center_text "https://github.com/vukilis" "$CLR_GOLD"
+    center_text "https://www.sudarblogger.com" "$CLR_GOLD"
+    center_text "https://github.com/kangsudarid" "$CLR_GOLD"
     echo -e "${CLR_GOLD}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
 }
 
