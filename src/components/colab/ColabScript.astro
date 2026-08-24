@@ -28,15 +28,15 @@
     if (!sysTermBody) return;
 
     sysTermBody.innerHTML = `
-      <div class="term-line"><span class="term-prompt">root@vuk1lis:~#</span> <span class="term-cmd">apt update && apt upgrade -y</span></div>
+      <div class="term-line"><span class="term-prompt">root@sudar:~#</span> <span class="term-cmd">apt update && apt upgrade -y</span></div>
       <div class="term-line term-output">Reading package lists... Done</div>
       <div class="term-line term-output">Building dependency lists... Done</div>
       <div class="term-line term-success">5 packages can be upgraded. Run 'apt list --upgradable'.</div>
-      <div class="term-line"><span class="term-prompt">root@vuk1lis:~#</span> <span class="term-cmd">ufw allow 443/tcp</span></div>
+      <div class="term-line"><span class="term-prompt">root@sudar:~#</span> <span class="term-cmd">ufw allow 443/tcp</span></div>
       <div class="term-line term-output">Rules updated</div>
       <div class="term-line term-output">Rules updated (v6)</div>
-      <div class="term-line"><span class="term-prompt">root@vuk1lis:~#</span> <span class="term-cmd">systemctl restart nginx</span></div>
-      <div class="term-line typing-line"><span class="term-prompt">root@vuk1lis:~#</span> <span class="cursor-blink">_</span></div>
+      <div class="term-line"><span class="term-prompt">root@sudar:~#</span> <span class="term-cmd">systemctl restart nginx</span></div>
+      <div class="term-line typing-line"><span class="term-prompt">root@sudsr:~#</span> <span class="cursor-blink">_</span></div>
     `;
   }
 
@@ -57,7 +57,7 @@
     if (typedTextEl) {
       const commands = [
         "terraform apply colab",
-        'git push "vuk.lekic@vukilis.com"',
+        'git push "admin@sudarblogger.com"',
         "ansible-playbook poweron.yml",
         "docker compose -f project.yml up"
       ];
