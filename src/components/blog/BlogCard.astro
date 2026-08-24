@@ -19,7 +19,7 @@ const { title, description, pubDate, lastmod, slug, tags, categories, activeTag,
 
 const postUrl = currentPage && currentPage > 1 ? `${base}blog/${currentPage}/${slug}/` : `${base}blog/${slug}/`;
 
-const formattedDate = pubDate.toLocaleDateString('en-US', {
+const formattedDate = pubDate.toLocaleDateString('id-ID', {
   year: 'numeric',
   month: 'short',
   day: 'numeric',
