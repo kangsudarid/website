@@ -26,11 +26,17 @@ Ada yang sudah tau mengenai Hugo ini? Jika belum tau atau belum akan jelaskan se
 
 Hugo adalah generator situs statis (static site generator) sumber terbuka yang ditulis dalam bahasa pemrograman Go (Golang). Alat ini mengubah berkas konten Markdown dan template menjadi halaman web HTML statis yang sangat cepat, aman, dan tidak memerlukan basis data (database). 
 
+## Apa itu Clouflare Pages? 
+
+Cloudflare Pages adalah platform hosting berbasis JAMstack yang disediakan oleh Cloudflare. Platform ini memungkinkan para pengembang web untuk membuat, menguji, dan menyebarkan (deploy) situs web statis maupun aplikasi front-end secara cepat, aman, dan gratis melalui jaringan global edge network milik Cloudflare.
+
+Sebenarnya tidak hanya cloudflare pages aja yang populer ada juga vercel, Netlify yang bisa kalian gunakan untuk hosting, tapi bagi saya yang mudah itu di Cloudflate selain itu masih ribet untuk deploy nya. 
+
 ## Deploy Hugo di Cloudflare Pages
 
 Karena disini saya memakai Handphone untuk deploy Hugo jadi sebelum nya sudah memiliki theme hugo ini dahulu, theme hugo yang pernah saya pakai ini merupakaan theme karya ardiantara.
 
-Atau bisa clone git dibawah ini :
+> Atau bisa clone git dibawah ini :
 
 ```bash
 git clone --depth 1 https://github.com/ardianta/blog.git ardianta-blog
@@ -42,13 +48,13 @@ Karena ada beberapa alasan maka dari itu pindah atau migrasi blog, sebenarnya CM
 - Pilih Workers and Pages
 - Connect Akun Git Milik Kalian
 - Setelah Connect Pilih Repository yang sudah di simpan tadi
-- Pilih Hugo untuk Build nya 'hugo --minify'
-- Build Directory nya pilih aja 'Public'
+- Pilih Hugo untuk Build nya `hugo --minify`
+- Build Directory nya pilih aja `Public`
 - Klik Save and Deploy
 
 Tunggu beberapa menit hingga proses selesai biasanya membutuhkan waktu 5 menitan untuk deplay nya. 
 
-Apabila sudah selesai pilih aja Continue Project. 
+Apabila sudah selesai pilih aja `Continue Project`. 
 
 ### Konfigurasi Hugo
 
@@ -136,4 +142,6 @@ image: "/img/1d1d/08.webp"
 description: "Iseng-iseng aja!"
 ```
 
-Apa darisini masih ada yang kebingungan? 
+> Apa darisini masih ada yang kebingungan? 
+
+Kedepan nya blog ini akan berbagi tutorial mengenai AstroJS, Hugo dan NextJS sesuai pengalaman saya dapat waktu otak atik blog ini. 
