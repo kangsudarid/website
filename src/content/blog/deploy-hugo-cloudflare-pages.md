@@ -32,9 +32,9 @@ Karena disini saya memakai Handphone untuk deploy Hugo jadi sebelum nya sudah me
 
 Atau bisa clone git dibawah ini :
 
-'''bash
+```bash
 git clone --depth 1 https://github.com/ardianta/blog.git ardianta-blog
-'''
+```
 
 Karena ada beberapa alasan maka dari itu pindah atau migrasi blog, sebenarnya CMS banyak sekali untuk ngeblog ada AstroJS, NextJS, GatsbyJS dan masih banyak lagi. 
 
@@ -52,21 +52,18 @@ Apabila sudah selesai pilih aja Continue Project.
 
 ### Konfigurasi Hugo
 
-'''bash
+```bash
 baseurl: 'https://www.ardianta.com'
 title: Ahmad Muhardian
 theme: ardianta
 disqusShortname: ardianta
-
 services:
   googleAnalytics:
   ID: UA-80537197-1
   disqus:
     shortname: ardianta
-
 permalinks:
   page: '/:slug/'
-
 params:
   author: Dian
   email: web@ardianta.com
@@ -75,7 +72,6 @@ params:
     github: https://github.com/ardianta
     linkedin: https://linkedin.com/in/ardianta
     dribbble: https://dribbble.com/ardianta
-
 frontmatter:
   date:
     - date
@@ -91,7 +87,6 @@ frontmatter:
     - date
   expiryDate:
     - expiryDate
-
 menu:
   main:
     - identifier: about
@@ -114,36 +109,31 @@ menu:
       name: RSS
       url: 'http://feeds.feedburner.com/ardianta'
       weight: 5
-
 privacy:
   youTube:
     disable: false
     privacyEnhanced: false
   instagram:
     disable: false
-    simple: false
-
+    simple: fals
 markup:
   goldmark:
     renderer:
       unsafe: true
-'''
+```
 
 ### Cara Posting Arikel Hugo
 
-'''bash
+``` bash
 title: "1 Day 1 Draw Challenge!"
 slug: 1d1d
 date: 2019-06-06T19:44:01+08:00
 draft: false
-
 type: post
-
 tags:
     - Drawing
-
 image: "/img/1d1d/08.webp"
 description: "Iseng-iseng aja!"
-'''
+```
 
 Apa darisini masih ada yang kebingungan? 
