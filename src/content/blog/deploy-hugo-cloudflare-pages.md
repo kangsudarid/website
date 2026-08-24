@@ -13,7 +13,7 @@ share:
 draft: false
 license: "MIT"
 
-tags: [astro, hugo, adsense]
+tags: [cloudflare, hugo, themes]
 categories: [Web]
 description: "Cara Hosting Hugo di Cloudflate Pages 2026"
 ---
@@ -28,17 +28,122 @@ Hugo adalah generator situs statis (static site generator) sumber terbuka yang d
 
 ## Deploy Hugo di Cloudflare Pages
 
-Karena disini saya memakai Handphone untuk deploy Hugo jadi sebelum nya sudah memiliki theme hugo ini dahulu, theme hugo yang pernah saya pakai ini merupakaan theme karya ardiantara. Karena ada beberapa alasan maka dari itu pindah atau migrasi blog, sebenarnya CMS banyak sekali untuk ngeblog ada AstroJS, NextJS, GatsbyJS dan masih banyak lagi. 
+Karena disini saya memakai Handphone untuk deploy Hugo jadi sebelum nya sudah memiliki theme hugo ini dahulu, theme hugo yang pernah saya pakai ini merupakaan theme karya ardiantara.
+
+Atau bisa clone git dibawah ini :
+
+'''bash
+git clone --depth 1 https://github.com/ardianta/blog.git ardianta-blog
+'''
+
+Karena ada beberapa alasan maka dari itu pindah atau migrasi blog, sebenarnya CMS banyak sekali untuk ngeblog ada AstroJS, NextJS, GatsbyJS dan masih banyak lagi. 
 
 - Masuk ke Cloudflare
 - Pilih Workers and Pages
 - Connect Akun Git Milik Kalian
 - Setelah Connect Pilih Repository yang sudah di simpan tadi
-- Pilih Hugo untuk Build nya hugo --minify
-- Build Directory nya pilih aja Public
+- Pilih Hugo untuk Build nya 'hugo --minify'
+- Build Directory nya pilih aja 'Public'
 - Klik Save and Deploy
 
 Tunggu beberapa menit hingga proses selesai biasanya membutuhkan waktu 5 menitan untuk deplay nya. 
 
 Apabila sudah selesai pilih aja Continue Project. 
 
+### Konfigurasi Hugo
+
+'''bash
+baseurl: 'https://www.ardianta.com'
+title: Ahmad Muhardian
+theme: ardianta
+disqusShortname: ardianta
+
+services:
+  googleAnalytics:
+  ID: UA-80537197-1
+  disqus:
+    shortname: ardianta
+
+permalinks:
+  page: '/:slug/'
+
+params:
+  author: Dian
+  email: web@ardianta.com
+  description: 'Hello, saya Dian. Blog ini belum jadi. Sabar ya...'
+  social:
+    github: https://github.com/ardianta
+    linkedin: https://linkedin.com/in/ardianta
+    dribbble: https://dribbble.com/ardianta
+
+frontmatter:
+  date:
+    - date
+    - publishDate
+    - lastmod
+  lastmod:
+    - ':git'
+    - lastmod
+    - date
+    - publishDate
+  publishDate:
+    - publishDate
+    - date
+  expiryDate:
+    - expiryDate
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
+    - identifier: art
+      name: Art
+      url: 'https://ardiantapargo.deviantart.com/'
+      weight: 2
+    - identifier: twitter
+      name: Twitter
+      url: 'https://twitter.com/ardiantapargo'
+      weight: 3
+    - identifier: github
+      name: Github
+      url: 'https://github.com/ardianta'
+      weight: 4
+    - identifier: rss
+      name: RSS
+      url: 'http://feeds.feedburner.com/ardianta'
+      weight: 5
+
+privacy:
+  youTube:
+    disable: false
+    privacyEnhanced: false
+  instagram:
+    disable: false
+    simple: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+'''
+
+### Cara Posting Arikel Hugo
+
+'''bash
+title: "1 Day 1 Draw Challenge!"
+slug: 1d1d
+date: 2019-06-06T19:44:01+08:00
+draft: false
+
+type: post
+
+tags:
+    - Drawing
+
+image: "/img/1d1d/08.webp"
+description: "Iseng-iseng aja!"
+'''
+
+Apa darisini masih ada yang kebingungan? 
