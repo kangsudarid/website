@@ -17,8 +17,7 @@ tags: [astro, gatsbyjs, cloudflare]
 categories: [Web]
 description: "Bagaimana Hosting Hugo di Cloudflare?"
 ---
-
-![Migrasi Blog ke GatsbyJs](/images/articles/gatsby-js/gatsbyjs.png) 
+ 
 Setalah beberapa bulan menggunakan Hugo akhirnya pada tanggal 13 Agustus 2026 Memutuskan untuk migrasi blog ke gatsby. Sebenarnya di Hugo juga banyak pengguna nya dan merupakan CMS Populer di dunia namun ada beberapa kendala yang mana harus membuat saya memindah blog ke Gatsby ini. 
 
 Buat yang belum tau apa sih itu GatsbyJs ini? Sebenarnya di era sekarang banyak sekali CMS blog yang bisa kalian pakai mulai dari Hugo, Astro, NextJs dan masih banyak lagi namun yang saya sebautkan ini adalah CMS populer yang banyak dipakai oleh Devoloper Dunia. 
