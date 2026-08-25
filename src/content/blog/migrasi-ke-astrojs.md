@@ -52,10 +52,10 @@ Agar tidak salah pilih CMS maka disini mari kita badingkan Astrojs dengan Gatsby
 
 **​Keunggulan Astro.js:**
 
-​- Islands Architecture: Mengirimkan HTML murni ke browser dan hanya mengunduh JavaScript pada komponen interaktif tertentu.
 - Multi-Framework: Bebas menggunakan komponen dari React, Svelte, atau Vue dalam satu proyek secara bersamaan.
 - Kurva Belajar Rendah: Menggunakan sintaks mirip HTML (.astro) yang intuitif dan mudah dipahami.
 - Optimasi Konten: Sangat efisien untuk situs berbasis teks seperti blog, dokumentasi, dan portofolio.
+- ​Islands Architecture: Mengirimkan HTML murni ke browser dan hanya mengunduh JavaScript pada komponen interaktif tertentu.
 
 **​Keunggulan Gatsby.js:**
 ​
