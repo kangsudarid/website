@@ -51,16 +51,16 @@ Sebenarnya ada banyak pilihan hlating yang populer seperti Vercel, Akan tetapi s
 Agar tidak salah pilih CMS maka disini mari kita badingkan Astrojs dengan GatsbyJs ini :
 
 **​Keunggulan Astro.js:**
-​1. Islands Architecture: Mengirimkan HTML murni ke browser dan hanya mengunduh JavaScript pada komponen interaktif tertentu.
-2. ​Multi-Framework: Bebas menggunakan komponen dari React, Svelte, atau Vue dalam satu proyek secara bersamaan.
-3. ​Kurva Belajar Rendah: Menggunakan sintaks mirip HTML (.astro) yang intuitif dan mudah dipahami.
-4. ​Optimasi Konten: Sangat efisien untuk situs berbasis teks seperti blog, dokumentasi, dan portofolio.
+​- Islands Architecture: Mengirimkan HTML murni ke browser dan hanya mengunduh JavaScript pada komponen interaktif tertentu.
+- Multi-Framework: Bebas menggunakan komponen dari React, Svelte, atau Vue dalam satu proyek secara bersamaan.
+- Kurva Belajar Rendah: Menggunakan sintaks mirip HTML (.astro) yang intuitif dan mudah dipahami.
+- Optimasi Konten: Sangat efisien untuk situs berbasis teks seperti blog, dokumentasi, dan portofolio.
 
 **​Keunggulan Gatsby.js:**
-​1. Ekosistem React yang Luas: Memanfaatkan penuh pustaka, alur kerja, dan tooling dari ekosistem React.
-2. ​Ekosistem Plugin Melimpah: Menyediakan ribuan plugin siap pakai untuk integrasi CMS, SEO, dan manipulasi gambar.
-​3. GraphQL Terintegrasi: Memudahkan pengelolaan dan penggabungan data dari berbagai headless CMS secara terstruktur.
-4. ​Rendering Hibrida: Mendukung Deferred Static Generation (DSG) dan SSR untuk menangani ribuan halaman dinamis.
+​- Ekosistem React yang Luas: Memanfaatkan penuh pustaka, alur kerja, dan tooling dari ekosistem React.
+- ​Ekosistem Plugin Melimpah: Menyediakan ribuan plugin siap pakai untuk integrasi CMS, SEO, dan manipulasi gambar.
+- GraphQL Terintegrasi: Memudahkan pengelolaan dan penggabungan data dari berbagai headless CMS secara terstruktur.
+- Rendering Hibrida: Mendukung Deferred Static Generation (DSG) dan SSR untuk menangani ribuan halaman dinamis.
 
 
 ## Theme Apa Yang di Pakai? 
