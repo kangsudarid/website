@@ -13,7 +13,7 @@ share:
 draft: false
 license: "MIT"
 
-tags: [astro, Vite, cloudflare]
+tags: [astro, vite, cloudflare]
 categories: [Web]
 description: "Setelah berkelana kesana - kemari akhirnya menjadi pilihan ngeblog adalah Framework Astro"
 ---
@@ -36,7 +36,7 @@ Astro JS adalah kerangka kerja (framework) web modern sumber terbuka yang diranc
 Apalagi sekarang Astro 7 sudah keluar dengan beberapa kelebihan nya, tentu membuat website akan lebih cepat dimuat, tentu dengan website cepat dimuat akan membuat pengunjung menjadi betah. 
 
 ## Penjelasan Mengenai Astro 7
-Astro.js adalah framework web modern yang terkenal dengan performa tingginya karena menggunakan pendekatan server-first dan arsitektur Islands (mengirimkan JavaScript ke klien hanya jika benar-benar dibutuhkan).
+[Astro.js](https://astro.build/) adalah framework web modern yang terkenal dengan performa tingginya karena menggunakan pendekatan server-first dan arsitektur Islands (mengirimkan JavaScript ke klien hanya jika benar-benar dibutuhkan).
 
 Pada Astro versi 7 (dan pembaruan terbarunya di seri 7.x), tim pengembang berfokus kuat pada peningkatan performa build secara masif, skalabilitas horizontal, dan integrasi fitur-fitur baru yang lebih modern.
 
@@ -68,3 +68,13 @@ Ada beberapa perubahan besar yang mengharuskan developer melakukan penyesuaian j
  - Beberapa API dari View Transitions lama telah dihapus atau diganti.
 
 Namun Astro yang saat ini yang saya pakai masih menggunakan versi yang ke 6 dimana belum update ke versi yang lebih baru ini. 
+
+## Performa AstroJS
+Performa Astro.js sangat tinggi karena mengirimkan HTML murni ke browser secara default tanpa menyertakan kode JavaScript yang tidak penting bagi pengguna. 
+
+Tidak hanya itu saja dari segi SEO pun Astro tidak kalah dengan yang lain, apalagi AstroJS ini sendiri menerapkan pre-reading yang mana murni HTML tanpa ada nya Javascript.
+
+## Blog Masih Pengembangan
+Karena masih belajar mengenai AstroJS jadi blog ini masih pengembangn, karena di AstroJS ini bisa otak - atik HTML sesuka kalian tanpa ada nya batasan, dalam 2 aja blog ini sudah dimodifikasi. 
+
+
