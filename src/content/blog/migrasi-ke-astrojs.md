@@ -18,11 +18,6 @@ categories: [Web]
 description: "AstroJS membaut blog menjadi cepat karena meminimalkan Javascript"
 ---
 
-import { Image } from 'astro:assets';
-import websiteImg from '../../../assets/images/2026/migrasi_astro/websiteku.png';
-
-<Image src={websiteImg} alt="Astro Website" />
-
 Setelah beberapa hari memggunakan [GastbyJS](https://www.sudarblogger.com/blog/gatsbyjs/) akhir saya pindah lagi ke AstroJS sebagai piliham Platfrom blog saya saat ini, mungkin kalian berfikir nih orang kenapa gonta - ganti mulu ya? hehehe
 
 Dari segi SEO aku akui kalau GatsbyJS ini saat cocok apalagi saat memindah blog banyak artikel dalam hitungan jam ke index oleh Google, bahkan hampir semua artikel saya sudah ke index semua oleh Google. 
@@ -79,7 +74,7 @@ Tentu yang berkunjung di blog ini pada bertanya template apa yang saya pakai, di
 Karena masih menggunakan Cloudflare Pages maka saya akan share cara naya deploy AstroJS ini kepada kalian semua, jika bingung langsung tanyakan di kolom komentar aja. 
 
 ### Stup Cloudfalre Page
-- Log in ke akun Cloudflare milik kalian
+- Log in ke akun [Cloudflare](https://dash.cloudflare.com/login) milik kalian
 - Pilih menu Workers & Pages, kemudian `klik Create` application
 - Pilih Lagi `Get Started`
 - Pilih Import an existing Git repository klik `Get Started`
@@ -98,4 +93,43 @@ Root directory: /
 ### Tunggu Build
 Setelah memgikuti langkah diatas tinggal tunggu aja, prosesnya membutuhkan waktu sekitar 5 atau 10 menit saja jadi tetap tunggu saja proses nya.
 
+## Setting Theme AstroJs
+Setiap theme astrojs ini sangatlah berbeda - beda cara setting nya seperti theme yang saya pakai ini dimana sedikit ribet, akan tetapi theme AstroJS ini pasti ada `astro.config.mjs` untuk konfirmasi website kita. 
 
+```bash
+import { defineConfig } from 'astro/config';
+import remarkToc from 'remark-toc';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import sitemap from '@astrojs/sitemap';
+import { visit } from 'unist-util-visit';
+import mdx from '@astrojs/mdx';
+import expressiveCode from 'astro-expressive-code';
+import { unified } from '@astrojs/markdown-remark';
+
+function rehypeLazyImages() {
+  return (tree) => {
+    visit(tree, 'element', (node) => {
+      if (node.tagName === 'img' && !node.properties.loading) {
+        node.properties.loading = 'lazy';
+        node.properties.decoding = 'async';
+      }
+    });
+  };
+}
+
+export default defineConfig({
+  site: 'https://www.sudarblogger.com',
+  trailingSlash: 'always',
+
+  markdown: unified({
+    remarkPlugins: [[remarkToc, { heading: 'contents' }]],
+    rehypePlugins: [rehypeSlug, rehypeLazyImages, [rehypeAutolinkHeadings, { behavior: 'append' }]],
+  }),
+
+  prefetch: false,
+
+  integrations: [expressiveCode(), sitemap(), mdx()],
+});
+```
+diatas adalah konfigurasi AstroJS ini jadi apabila kalian sudah mengganti domain milik kalian, harus diganti juga konfigurasi dengan domain kalian. 
