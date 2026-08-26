@@ -74,3 +74,28 @@ Agar tidak salah pilih CMS maka disini mari kita badingkan Astrojs dengan Gatsby
 
 Tentu yang berkunjung di blog ini pada bertanya template apa yang saya pakai, disini saya menggunakan template karya devoloper Vuk1lis, dimana theme nya sesuai yang saya harapkan ditambah tidak terlalu wah juga, karena ini blog nya bersifat personal jadi tidak perlu lah memiliki banyak fitur yang wah cukup sewajar nya aja. 
 
+## Deploy Astro ke Cloudflare
+
+Karena masih menggunakan Cloudflare Pages maka saya akan share cara naya deploy AstroJS ini kepada kalian semua, jika bingung langsung tanyakan di kolom komentar aja. 
+
+### Stup Cloudfalre Page
+- Log in ke akun Cloudflare milik kalian
+- Pilih menu Workers & Pages, kemudian `klik Create` application
+- Pilih Lagi `Get Started`
+- Pilih Import an existing Git repository klik `Get Started`
+- Kemudian pilih **Connect Git** milik kalian
+- Setelah Selesai, selanjutnya pilih Theme AstroJS milik kalian
+- Pastikan untuk Freamwork Preset nya pilih yang **Astro** jangan pilih yang lain, karena yang mau kita build itu adalah AstroJS. 
+
+### Build Configurasi
+```bash
+Build command: npm run build
+Build output directory: dist
+Root directory: /
+```
+> Note : Apabila kalian menemukan **build pnpm** berarti template yang digunakan itu memakai lokal server jadi tidak bisa dibuild di cloudflare
+
+### Tunggu Build
+Setelah memgikuti langkah diatas tinggal tunggu aja, prosesnya membutuhkan waktu sekitar 5 atau 10 menit saja jadi tetap tunggu saja proses nya.
+
+
