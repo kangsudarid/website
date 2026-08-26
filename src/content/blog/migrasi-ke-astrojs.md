@@ -134,3 +134,31 @@ export default defineConfig({
 });
 ```
 diatas adalah konfigurasi AstroJS ini jadi apabila kalian sudah mengganti domain milik kalian, harus diganti juga konfigurasi dengan domain kalian. 
+
+Setelah setting configurasi astro selanjutnya kita setting title blog, seperti saya bilang di awal themes astro ini sangatlah ribet biasa nya kalau astro itu setting title serta descripsi nya berada di `content.config.ts` namun kali ini berada di 'index.astro'
+
+```index.astro
+<BaseLayout title="Sudar Blogger | Personal Website & Portofolio" description="Vuk1lis is a DevOps engineer, Linux enthusiast, and VibeCoder crafting immersive digital experiences where dark aesthetics meet surgical performance." keywords="vukilis, portfolio, creative developer, devops engineer, linux enthusiast, immersive experiences, dark aesthetics, web development, personal website, tech blog, coding, automation, frontend, backend, open source, github, projects, skills, recent posts, vuk1lis, v for vendetta">
+  <Navigation />
+
+  <!-- Page-wide themed atmosphere -->
+  <div class="vendetta-bg" aria-hidden="true">
+    <div class="vendetta-vendetta-v v-monogram">
+      <span>V</span>
+    </div>
+  </div>
+```
+
+Tinggal setting Meta data agar blog mudah di temukan oleh mesin pencari, mulai dari setting icon, pasang kode [Google Adsense](https://www.sudarblogger.com/blog/google-adsense/) misalnya. 
+
+```BaseLayout.Astro
+const base = import.meta.env.BASE_URL;
+const {
+  title = 'Sudar Blogger | Catatan Harian Kang Sudar',
+  description = 'My work sits at the intersection of art and technology. I build immersive digital experiences where dark aesthetics meet surgical performance. Every deployment is a revolution. Every animation is a statement.',
+  keywords = 'sudar blogger, portfolio, creative developer, immersive experiences, dark aesthetics',
+  hideFooter = false,
+} = Astro.props;
+---
+```
+Nah sekarang sudah selesai, Apabila kalian masih bingung bisa langsung aja tanyakan di kolom komentar yang ada di bawah ini. 
