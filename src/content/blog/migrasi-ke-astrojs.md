@@ -17,7 +17,6 @@ tags: [astro, gatsbyjs, cloudflare]
 categories: [Web]
 description: "AstroJS membaut blog menjadi cepat karena meminimalkan Javascript"
 ---
-
 import { Image } from 'astro:assets';
 import astroImg from '../../../assets/images/2026/migrasi_astro/websiteku.png';
 
