@@ -19,7 +19,7 @@ description: "AstroJS membaut blog menjadi cepat karena meminimalkan Javascript"
 ---
 
 import { Image } from 'astro:assets';
-import astroImg from '../../../assets/images/astro/migarsi-ke-astro/websiteku.png';
+import astroImg from '../../../assets/images/astro/migarsi-ke-astrojs/websiteku.png';
 
 <Image src={astroImg} alt="Astro Website" />
 
