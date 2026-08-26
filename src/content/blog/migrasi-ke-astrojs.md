@@ -19,9 +19,8 @@ description: "AstroJS membaut blog menjadi cepat karena meminimalkan Javascript"
 ---
 
 import { Image } from 'astro:assets';
-import astroImg from '../../../assets/images/astro/migarsi-ke-astrojs/websiteku.png';
 
-<Image src={astroImg} alt="Astro Website" />
+![Homelab Diagram](/images/astro/migarsi-ke-astrojs/websiteku.png)
 
 Setelah beberapa hari memggunakan [GastbyJS](https://www.sudarblogger.com/blog/gatsbyjs/) akhir saya pindah lagi ke AstroJS sebagai piliham Platfrom blog saya saat ini, mungkin kalian berfikir nih orang kenapa gonta - ganti mulu ya? hehehe
 
