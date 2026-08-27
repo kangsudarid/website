@@ -1,7 +1,7 @@
 ---
 title: "Pengalaman Membeli Template Blogger dari Sugeng.id"
-pubDate: 2026-08-27T19:27:55+02:00
-lastmod: 2026-01-02T19:27:55+02:00
+pubDate: 2026-01-02T19:27:55+02:00
+lastmod: 2026-08-27T19:27:55+02:00
 share:
   enable: true
   link: true
@@ -35,11 +35,15 @@ Tentu kalian pada tau lah template mas sugeng ini tanpa memakai licensi atau kod
 
 Wajar aja kalau template sugeng.id ini banyak sekali yang bajakan atau di bagikan free di internet bahkan saya sendiri menemukan kalau versi terbaru ini pun di bagikan di internet namun tidak saya pakai, alasan nya karena saya menghargai pembuat template tersebut.
 
-Karena penasaran kenapa di Template Sugeng.id ini tanpa licenci dan ini jawaban beliu
+**Karena penasaran kenapa di Template Sugeng.id ini tanpa licenci dan ini jawaban beliu**
 
 > Tema Blogger itu cuma berupa satu file XML. Seluruh isi template itu terbuka dan bisa diedit. Bedanya sama tema WordPress yang self-hosted (bisa divalidasi di server), tema Blogger tidak bisa dikunci di pihak server karena jalan di infrastruktur Blogger yang gak bisa kita kontrol.
 
 > Kalaupun dipasang sistem lisensi (misalnya lewat script), ceknya cuma jalan di sisi browser/template, jadi orang yang paham tinggal menghapus script itu dan lisensinya nggak ngaruh. Artinya: lisensi di tema Blogger itu cuma bikin ribet pembeli yang jujur, tapi tetap tidak bisa benar-benar mencegah pembajakan karena file XML-nya memang gampang dibagikan.
+
+Dari kalimat yang saya tanyakan di kolom komentar ini ternyata ada benarnya karena ini membuat ribet para pembeli dan tidak luput juga dari bajakn yang mereka mengerti. 
+
+Kebanyakan kode script licenci ini hanya di enscript saja dan itu pun bisa di hapus. 
 
 ## Gratis Update Selamanya
 Apabila kalian membeli template sugeng.id ini akan mendapatkan update selamanya meskipun pelanggan baru semua nya akan mendapatkan update template nya sampai kapan pun, jika yang lain tidak mendapatkan upadate atau hanya upadate satu tahun saja di sugeng.id ini tentu tidak, sampai kapan pun kalian tetap dapat update template terbaru meskipun pelanggan baru pun
