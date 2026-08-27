@@ -13,7 +13,7 @@ share:
 draft: false
 license: "MIT"
 
-tags: [astro, vite, cloudflare]
+tags: [astro, vite, cloudflare, react]
 categories: [Web]
 description: "Setelah berkelana kesana - kemari akhirnya menjadi pilihan ngeblog adalah Framework Astro"
 ---
