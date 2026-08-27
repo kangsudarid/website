@@ -67,7 +67,10 @@ Ada beberapa perubahan besar yang mengharuskan developer melakukan penyesuaian j
  - Penghapusan `@astrojs/db`: Fitur ini dihentikan. Developer disarankan bermigrasi menggunakan alternatif lain seperti `node:sqlite` (bawaan Node.js v22.5.0+) atau menggunakan ORM seperti Drizzle.
  - Beberapa API dari View Transitions lama telah dihapus atau diganti.
 
-Namun Astro yang saat ini yang saya pakai masih menggunakan versi yang ke 6 dimana belum update ke versi yang lebih baru ini. 
+Namun Astro yang saat ini yang saya pakai masih menggunakan versi yang ke 6 dimana belum update ke versi yang lebih baru ini.
+
+## Diupdate Pengembang
+Di Astro juga selalu update setiap bulan nya oleh tim devoloper, ditambah lagi di Astro ini juga open source jadi bebas mau bikin website sesuka hati kalian, biasa buat leadingpage, portofolio atau toko online misalnya. 
 
 ## Performa AstroJS
 Performa Astro.js sangat tinggi karena mengirimkan HTML murni ke browser secara default tanpa menyertakan kode JavaScript yang tidak penting bagi pengguna. 
