@@ -7,6 +7,7 @@ import Skills from '../components/Skills.astro';
 import BlogCard from '../components/blog/BlogCard.astro';
 import { fromPost } from '../components/blog/ReadingTime.astro';
 import RadioPlayer from '../components/other/RadioPlayer.astro';
+import SectionRail from '../components/home/SectionRail.astro';
 
 const base = import.meta.env.BASE_URL;
 const allBlogPosts = await getCollection('blog', ({ data }) => !data.draft);
@@ -22,6 +23,13 @@ void allTags; // tags cloud removed; kept for future use
 
 const yearStarted = 2020;
 const yearsOfBuilding = new Date().getFullYear() - yearStarted;
+
+interface Stat {
+  label: string;
+  value: string;
+  count?: number;
+  suffix?: string;
+}
 
 const stats = [
   { label: 'Years Building', value: `${yearsOfBuilding}+` },
