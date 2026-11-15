@@ -21,7 +21,7 @@ allBlogPosts.forEach((p) => (p.data.tags ?? []).forEach((t) => tagSet.add(t)));
 const allTags = Array.from(tagSet).sort();
 void allTags; // tags cloud removed; kept for future use
 
-const yearStarted = 2023;
+const yearStarted = 2017;
 const yearsOfBuilding = new Date().getFullYear() - yearStarted;
 
 interface Stat {
@@ -34,7 +34,7 @@ interface Stat {
 const stats: Stat[] = [
   { label: 'Years Building', value: `${yearsOfBuilding}+`, count: yearsOfBuilding, suffix: '+' },
   { label: 'Articles Written', value: `${totalPosts}`, count: totalPosts, suffix: '' },
-  { label: 'Uptime Mindset', value: '99%', count: 99, suffix: '%' },
+  { label: 'Uptime Mindset', value: '100%', count: 100, suffix: '%' },
   { label: 'Sip of Mate', value: '∞' },
 ];
 
